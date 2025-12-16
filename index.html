@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disk Scheduling Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container">
+<h1>Disk Scheduling Simulator</h1>
+
+<label>Initial Head Position:</label>
+<input type="number" id="start" value="50"><br>
+
+<label>Requests (comma separated):</label>
+<input type="text" id="req" value="95,180,34,119,11,123,62,64" style="width: 80%;"><br>
+
+<label>Algorithm:</label>
+<select id="algo">
+    <option value="fcfs">FCFS</option>
+    <option value="sstf">SSTF</option>
+    <option value="scan">SCAN</option>
+    <option value="cscan">C-SCAN</option>
+</select>
+
+<label>Direction:</label>
+<select id="dir">
+    <option value="right">Right</option>
+    <option value="left">Left</option>
+</select>
+
+<label>Disk Max:</label>
+<input type="number" id="diskMax" value="199">
+
+<br><br>
+<button onclick="runSim()">Run Simulation</button>
+
+<canvas id="diskCanvas" width="900" height="300"></canvas>
+
+<div class="metrics" id="metrics"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
