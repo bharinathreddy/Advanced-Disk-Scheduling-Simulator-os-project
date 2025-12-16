@@ -83,4 +83,23 @@ Head moves in one direction only
 Provides uniform wait time
 
 
+📁 Project Structure
+
+disk-scheduler/
+│── index.html
+│── fcfs.html
+│── sstf.html
+│── scan.html
+│── cscan.html
+│── style.css
+│── script.js
+│── README.md
+
+🧪 Sample Input
+
+
+Initial Head Position: 50
+Requests: 95, 180, 34, 119, 11, 123, 62, 64
+
+@kamaljeet kaur Dhillol
 
